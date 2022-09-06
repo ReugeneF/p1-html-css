@@ -1,0 +1,14 @@
+body{background-color: darkgrey;
+}
+
+.img{height: 10vh; width: auto;
+}
+
+.img2{height:15vh; width: auto;
+}
+
+h1{ color: rgb(98, 98, 98);
+} /* of .naam{ color: darkblue;} en vanuit daar een class maken in mijn html bestand */
+
+.a{color: rgb(251, 0, 0); font-size: larger;}
+

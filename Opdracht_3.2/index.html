@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header><h1>Boekings formulier</h1></header>
+    <hr />
+    <main>
+      <form>
+        <label for="Vnaam">Voornaam : </label> <br />
+        <input
+          type="text"
+          pattern="^[a-zA-Z]+$"
+          id="Vnaam"
+          name="naam"
+          placeholder="John"
+        />
+        <br />
+        <br />
+        <label for="Anaam">Achternaam : </label> <br />
+        <input type="text" id="Anaam" name="Anaam" placeholder="Doe" /> <br />
+        <br />
+        <label for="Geslacht">Geslacht</label>
+        <select id="Man" id="Woman" id="Neither">
+          <option value="Man">Man</option>
+          <option value="Woman">Vrouw</option>
+          <option value="Neither">Anders</option>
+        </select>
+        <br />
+        <br />
+        <label for="Straat">Straat en huisnummer : </label> <br />
+        <input
+          type="text"
+          id="Straat"
+          name="Straat"
+          placeholder="Sportlaan 15"
+        />
+        <br />
+        <br />
+        <label for="postcode">Postcode : </label> <br />
+        <input
+          type="text"
+          id="postcode"
+          name="postcode"
+          placeholder="1234 AB"
+        />
+        <br />
+        <br />
+        <label for="stad">Stad : </label> <br />
+        <input type="text" id="stad" name="stad" placeholder="Spijkenisse" />
+        <br />
+        <br />
+        <label for="bsn"> BSN : </label> <br />
+        <input type="text" id="BSN" name="BSN" placeholder="273948192" /> <br />
+        <br />
+        <label for="Land">Selecteer een eindbestemming : </label>
+        <select id="Spanje" id="italie" id="Oekraine">
+          <option value="Spanje">Spanje</option>
+          <option value="Italie">Italie</option>
+          <option value="Oekraine">Oekraine</option>
+        </select>
+        <br />
+        <br />
+        <label for="Vertrek">Vertrek datum : </label>
+        <input type="date" id="datemin" name="datemin" min="9-05-2022" /> <br />
+        <br />
+        <label for="Terugkomst"> Terukomst datum : </label>
+        <input type="date" id="datemax" name="datemax" min="6-05-2022" /> <br />
+        <br />
+        <label for="Aantal">Aantal personen : </label>>
+        <input type="text" id="Aantal" name="Personen" />
+        <input type="submit" value="Boek nu!" />
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>
