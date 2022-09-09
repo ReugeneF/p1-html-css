@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+}
+
+.wrapper{
+    display:flex;
+    flex-direction:row;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+.wrapperR{
+    display:flex;
+    flex-direction:row-reverse;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+#flex-container{
+    display: flex ;
+    justify-content: center;
+    background-color: gray;
+}
+
+
+.test-1{
+    background-color: rgb(160, 156, 156);
+    width: 100%;
+    padding: 2em 1em 2em 1em;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 0.6em;
+    height: fit-content;
+}
+
+.test-2{   
+    width: 100%; 
+    height: fit-content;
+    flex: 2;
+}
+
+.test-3{   
+    width: 1; 
+    height: fit-content;
+}
