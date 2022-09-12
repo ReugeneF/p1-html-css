@@ -13,3 +13,28 @@ h3{font-size: 16px; color: teal;}
 
 .style{font-style: italic;}
 
+/* Hier boven is opdracht 4.1 en eronder is 4.2*/
+
+header{
+    width: 100%;
+    height: 33%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1542395975-d6d3ddf91d6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+}
+
+header > h1,p1{
+    color: green;
+}
+
+img{
+    width: 50%;
+    height: 50%;
+}
+
+article{
+    border-radius: 12px;
+    border: purple 1px solid;
+    border-left: 4px;
+}

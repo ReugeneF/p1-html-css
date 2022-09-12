@@ -1,0 +1,39 @@
+body, p{
+    background-color: gray;
+    color: red;
+}
+
+.item-a{
+    grid-area: header;
+    background-color: white;
+    border: 1px rgb(242, 255, 0) solid;
+}
+
+.item-b{
+    grid-area: main;
+    background-color: white;
+    border: 1px rgb(47, 0, 255) solid;
+}
+
+.item-c{
+    grid-area: pictures;
+    background-color: white;
+    border: 1px red solid;
+}
+
+.item-d{
+    grid-area: footer;
+    background-color: white;
+    border: 1px rgb(0, 255, 38) solid;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header "
+    "main main pictures"
+    "footer footer footer ";
+}
+
