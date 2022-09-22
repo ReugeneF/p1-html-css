@@ -12,19 +12,20 @@
     <hr />
     <main>
       <form>
-        <label for="Vnaam">Voornaam : </label> <br />
+        <label for="vNaam">Voornaam : </label> <br />
         <input
           type="text"
-          id="Vnaam"
+          id="vNaam"
           name="naam"
           placeholder="John"
           autofocus
           autocomplete="on"
+          pattern="[A-Za-z]{0,100}"
         />
         <br />
         <br />
-        <label for="Anaam">Achternaam : </label> <br />
-        <input type="text" id="Anaam" name="Anaam" placeholder="Doe" /> <br />
+        <label for="fName">Achternaam : </label> <br />
+        <input type="text" id="fName" name="fName" placeholder="Doe" /> <br />
         <br />
         <label for="Geslacht">Geslacht</label>
         <select id="Man" id="Woman" id="Neither">
@@ -53,12 +54,19 @@
         />
         <br />
         <br />
-        <label for="stad">Stad : </label> <br />
+        <label for="city">City : </label> <br />
         <input type="text" id="stad" name="stad" placeholder="Spijkenisse" />
         <br />
         <br />
         <label for="bsn"> BSN : </label> <br />
-        <input type="text" id="BSN" name="BSN" placeholder="273948192"  maxlength="12"/> <br />
+        <input
+          type="text"
+          id="BSN"
+          name="BSN"
+          placeholder="273948192"
+          maxlength="9"
+        />
+        <br />
         <br />
         <label for="Land">Selecteer een eindbestemming : </label>
         <select id="Spanje" id="italie" id="Oekraine">
@@ -69,25 +77,43 @@
         <br />
         <br />
         <label for="Vertrek">Vertrek datum : </label>
-        <input type="date" id="datemin" name="datemin" min="09-07-2022" required /> <br />
+        <input
+          type="date"
+          id="datemin"
+          name="datemin"
+          min="09-07-2022"
+          required
+        />
+        <br />
         <br />
         <label for="Terugkomst"> Terukomst datum : </label>
-        <input type="date" id="datemax" name="datemax" min="10-07-2022" required /> <br />
+        <input
+          type="date"
+          id="datemax"
+          name="datemax"
+          min="10-07-2022"
+          required
+        />
+        <br />
         <br />
         <label for="Aantal">Aantal personen : </label>
-        <input list="aantal">
+        <input list="aantal" />
         <datalist id="aantal">
-          <option value="1">
-          <option value="2">
-          <option value="3">
-          <option value="4">
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
         </datalist>
-        <input type="submit" value="Boek nu!"><br> <br> <hr>
-        <label for="email"> E-Mail : </label> <br>
-        <input type="email" id="email" name="email"> <br>
-        <label for="password">Wachtwoord : </label> <br>
-        <input type="password" id="pwd" name="pwd"> <br> <br>
-        <input type="button" value="Sign up">
+
+        <input type="submit" value="Boek nu!" /><br />
+        <br />
+        <hr />
+        <label for="email"> E-Mail : </label> <br />
+        <input type="email" id="email" name="email" /> <br />
+        <label for="password">Wachtwoord : </label> <br />
+        <input type="password" id="pwd" name="pwd" /> <br />
+        <br />
+        <input type="button" value="Sign up" />
       </form>
     </main>
     <footer></footer>

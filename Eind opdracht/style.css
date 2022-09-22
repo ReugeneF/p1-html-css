@@ -1,0 +1,43 @@
+nav ul{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    padding: 0px 20px 0px 20px;
+    background-color: #131c27;
+    height: 5vh;
+    width: 100%;
+    list-style-type: none;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    position: absolute;
+    left: 0;
+
+}
+
+.page_1{
+    width: 100vw;
+    height: 90vh;
+    border: solid 1px red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; 
+}
+
+.text_1{
+    font-size: 3rem;
+}
+
+.button_1{
+    background-color: #4c6e97;
+    color:  white;
+    align-self: center;
+    width: 20vw;
+}
