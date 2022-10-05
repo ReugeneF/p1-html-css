@@ -141,3 +141,7 @@ footer p {
   color: #00a8c7;
   padding: 0.5rem 0.2rem 0.5rem 1rem;
 }
+.dropdown:hover{
+  background-color: white;
+  color:#00a8c7;
+}
