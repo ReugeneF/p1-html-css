@@ -119,10 +119,10 @@ footer p {
   position: absolute;
   display: none;
   flex-direction: column;
-  margin-top: 5.7vh;
   background-color: white;
   width: 19.5vh;
   row-gap: 1rem;
+  z-index: 1;
 }
 .navigation ul li section a{
   color: #00a8c7;
@@ -140,4 +140,5 @@ footer p {
 .hoverme:hover .dropdown{
   display: flex;
 }
+
 
