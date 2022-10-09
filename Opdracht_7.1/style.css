@@ -4,38 +4,65 @@
     margin: 0;
 }
 
-.container-one{
-
-}
-
 .container{
     color: black;
+    height: 30vh;
+}
+.container p{
+    width:90vw;
 }
 
 .red{
     background-color: red;
-    height: 50px;
-    width: 100%;
+    width: 100vw;
     padding-left: 50px;
+    height: 10vh;
 }
 
 .yellow{
     background-color: yellow;
-    height: 100%;
-    width: 100%;
+    width: 100vw;
     padding-left: 50px;
 }
 
 .orange{
     background-color: orange;
-    height: 100%;
-    width: 100%;
+    width: 100vw;
     padding-left: 50px;
 }
 
 .green{
     background-color: green;
-    height: 100;
-    width: 100%;
+    width: 100vw;
     padding-left: 50px;
 }
+
+@media screen and (max-device-width: 480px){
+.red{
+    background-color: blue;
+}
+.yellow{
+    background-color: teal; 
+}
+.orange{
+    background-color: purple;
+}
+.green{
+    background-color: darkblue;
+}
+}
+
+@media screen and (min-device-width: 481px) and (max-width:768px){
+    .red{
+        background-color: salmon;
+    }
+    .yellow{
+        background-color: red; 
+    }
+    .orange{
+        background-color: blue;
+    }
+    .green{
+        background-color: darkblue;
+    }
+    }
