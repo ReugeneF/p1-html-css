@@ -14,6 +14,7 @@ body {
 nav {
   display: flex;
   width: 100vw;
+  height: 15vh;
   padding: 2rem;
   min-height: 10vh;
   align-items: center;
@@ -130,9 +131,12 @@ footer p {
   position: relative;
 }
 
-.hoverme:hover{
+.hoverme:hover a{
   background-color: white;
   color: #00a8c7;
+}
+.hoverme:hover{
+  background-color: white;
 }
 .navigation ul li section a:hover{
   background-color: #E9E9E9;
@@ -140,5 +144,7 @@ footer p {
 .hoverme:hover .dropdown{
   display: flex;
 }
-
+.dropdown{
+  margin-left: -3rem;
+}
 
