@@ -1,43 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}  
+.whitespace1{
+    width: 100vw;
+    height: 4vh;
+    background-color: #131c27;
+} 
+body{
+    overflow-x: hidden;
+}
+nav{
+    height: 5vh;
+}
 nav ul{
     display: flex;
     flex-direction: row;
     position: relative;
-    justify-content: space-around;
-    padding: 0px 20px 0px 20px;
     background-color: #131c27;
     height: 5vh;
-    width: 100%;
+    width: 100vw;
     list-style-type: none;
+    align-items: center;
 }
-
 nav ul li a{
     color: white;
     text-decoration: none;
+    font-size: 2rem;
 }
-
+nav ul li {
+    margin: 0 5rem;
+}
+nav ul li:nth-child(4) {
+    margin-right: 5%;
+}
+nav ul{
+    position:fixed;
+}
 .logo{
-    position: absolute;
-    left: 0;
-
+    margin-right: auto;
 }
-
 .page_1{
+    margin-top: -5vh;
     width: 100vw;
-    height: 90vh;
-    border: solid 1px red;
+    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center; 
+    background-image: url(./img/landing-page.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-.text_1{
+.text_1 h1{
+    font-size: 5rem;
+    color: white;
+}
+.text_1 p{
     font-size: 3rem;
+    color: white;
 }
 
 .button_1{
     background-color: #4c6e97;
     color:  white;
     align-self: center;
-    width: 20vw;
+    width: 10vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button_1 p{
+    font-size: 2rem;
+}
+/* Page 2 */
+.page2{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(./img/new-york-page.png);
+    background-color: rgba(128, 128, 128, 0.329);
+}
+.page2 section:nth-child(1){
+    color: white;
+    margin-left: 5%;
+    font-size: 5rem;
+    font-weight: bold;
+    border-bottom: solid rgb(255, 255, 255) 0.3rem;
+    width: 12vw;
+    margin-bottom: 1%;
+}
+.page2 section:nth-child(2){
+    margin-left: 5%;
+    font-size: 3rem;
+    width: 22vw;
+    color: white;
+}
+/* Page 3 */
+.page3{
+    width: 100vw;
+    height: 100vh;
+}
+.info{
+    width: 100vw;
+    height: 20vh;
+    background-color: #131c27;
+}
+.info section h2{
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+}
+.info section p{
+    margin-top: 1%;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+.info2{
+    width: 100vw;
+    height: 75;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5rem;
+}
+.style{
+    width: 30vw;
+    height: 60vh;
+    margin-top: 3.5%;
+    border: solid 1px gray;
+}
+.hotel{
+    margin-right: 1.5rem;
+}
+.style section:nth-child(1){
+    background-color: #131c27;
+    height: 25%;
+}
+.style section:nth-child(1) img{
+    width: 11rem;
+    margin-top: 1.5rem;
+    margin-left: 40%;
+}
+.style section:nth-child(2) h4{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.style section:nth-child(2) p{
+    margin-top: 15%;
+    font-size: 4rem;
+    text-align: center;
+}
+/* page4*/
+.page4{
+    width: 100vw;
+    height: 95vh;
+    background-image: url(./img/contact-mountain.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: rgba(128, 128, 128, 0.329);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page4 section{
+    background-color: #131c27;
+    width: 50vw;
+    height: 50%;
 }
