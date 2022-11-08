@@ -176,4 +176,12 @@ nav ul{
     background-color: #131c27;
     width: 50vw;
     height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.page4 section form input:not(:last-child){
+    width: 150%;
+    height: 30%;
 }
